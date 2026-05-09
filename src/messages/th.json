@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "หน้าแรก",
+    "dashboard": "แดชบอร์ด",
+    "predictions": "ทำนายผล",
+    "leaderboard": "ตารางคะแนน",
+    "champion": "ทายแชมป์",
+    "profile": "โปรไฟล์",
+    "signIn": "เข้าสู่ระบบ",
+    "signOut": "ออกจากระบบ",
+    "language": "ภาษา"
+  },
+  "home": {
+    "hero": {
+      "title": "MATCH MASTER",
+      "subtitle": "ฟีฟ่า เวิลด์คัพ 2026",
+      "description": "ทายผลการแข่งขัน ลุ้นรางวัล และแข่งกับเพื่อนของคุณในทัวร์นาเมนต์ที่ยิ่งใหญ่ที่สุดในโลก",
+      "ctaPlay": "เริ่มเล่นเลย",
+      "ctaLearn": "รู้จักกติกา"
+    },
+    "features": {
+      "predict": {
+        "title": "ทายผลแมตช์",
+        "description": "ทายผลแมตช์ทุกนัด ทั้งผลแพ้ชนะ และสกอร์แน่นอน"
+      },
+      "champion": {
+        "title": "ทายแชมป์",
+        "description": "เลือก 1 ทีมก่อนวันที่ 11 มิ.ย. 2026 หากถูกต้องรับโบนัส +50 คะแนน"
+      },
+      "compete": {
+        "title": "แข่งขันกัน",
+        "description": "ดูอันดับของคุณในตารางคะแนนแบบเรียลไทม์"
+      }
+    }
+  },
+  "auth": {
+    "signInTitle": "เข้าสู่ระบบ",
+    "signUpTitle": "สมัครสมาชิก",
+    "email": "อีเมล",
+    "password": "รหัสผ่าน",
+    "forgotPassword": "ลืมรหัสผ่าน?",
+    "orContinueWith": "หรือเข้าสู่ระบบด้วย",
+    "googleSignIn": "เข้าสู่ระบบด้วย Google",
+    "noAccount": "ยังไม่มีบัญชี?",
+    "haveAccount": "มีบัญชีแล้ว?",
+    "signUpLink": "สมัครสมาชิก",
+    "signInLink": "เข้าสู่ระบบ",
+    "errors": {
+      "invalidEmail": "รูปแบบอีเมลไม่ถูกต้อง",
+      "invalidCredentials": "อีเมลหรือรหัสผ่านไม่ถูกต้อง",
+      "emailTaken": "อีเมลนี้ถูกใช้งานแล้ว",
+      "weakPassword": "รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร",
+      "required": "กรุณากรอกข้อมูลนี้"
+    }
+  },
+  "dashboard": {
+    "title": "แดชบอร์ด",
+    "myPoints": "คะแนนของฉัน",
+    "myRank": "อันดับของฉัน",
+    "totalPredictions": "การทำนายทั้งหมด",
+    "correctPredictions": "ทำนายถูก",
+    "upcomingMatches": "แมตช์ที่กำลังจะมาถึง",
+    "recentResults": "ผลการแข่งขันล่าสุด",
+    "championPick": "ทีมแชมป์ที่เลือก",
+    "noChampionPick": "ยังไม่ได้เลือกทีมแชมป์",
+    "pickChampionBtn": "เลือกทีมแชมป์",
+    "deadline": "หมดเขตก่อน 11 มิ.ย. 2026",
+    "viewAll": "ดูทั้งหมด"
+  },
+  "predictions": {
+    "title": "ทำนายผล",
+    "predict": "ทำนาย",
+    "editPrediction": "แก้ไขการทำนาย",
+    "savePrediction": "บันทึกการทำนาย",
+    "cancel": "ยกเลิก",
+    "home": "เจ้าบ้าน",
+    "away": "ทีมเยือน",
+    "vs": "VS",
+    "kickoff": "เวลาแข่งขัน",
+    "venue": "สนาม",
+    "matchLocked": "แมตช์นี้ปิดรับการทำนายแล้ว",
+    "predictionSaved": "บันทึกการทำนายเรียบร้อยแล้ว",
+    "noPredictions": "ยังไม่มีการทำนาย",
+    "filters": {
+      "all": "ทั้งหมด",
+      "upcoming": "กำลังจะมาถึง",
+      "predicted": "ทำนายแล้ว",
+      "completed": "สิ้นสุดแล้ว"
+    }
+  },
+  "champion": {
+    "title": "ทายแชมป์โลก",
+    "description": "เลือก 1 ทีมที่คุณคิดว่าจะคว้าแชมป์ฟีฟ่า เวิลด์คัพ 2026 ก่อนวันที่ 11 มิถุนายน 2026 หากถูกต้องคุณจะได้รับโบนัสพิเศษ +50 คะแนน",
+    "currentPick": "ทีมที่คุณเลือก",
+    "selectTeam": "เลือกทีม",
+    "confirmPick": "ยืนยันการเลือก",
+    "changePick": "เปลี่ยนทีม",
+    "bonusPoints": "+50 คะแนนโบนัส",
+    "deadlinePassed": "หมดเขตการทายแชมป์แล้ว",
+    "pickConfirmed": "ยืนยันการเลือกทีมแชมป์เรียบร้อยแล้ว",
+    "warning": "การเลือกทีมแชมป์จะถูกล็อคหลังจากวันที่ 11 มิ.ย. 2026"
+  },
+  "leaderboard": {
+    "title": "ตารางคะแนน",
+    "rank": "อันดับ",
+    "player": "ผู้เล่น",
+    "points": "คะแนน",
+    "predictions": "ทำนาย",
+    "accuracy": "ความแม่นยำ",
+    "champion": "ทายแชมป์",
+    "myPosition": "ตำแหน่งของฉัน",
+    "top10": "TOP 10",
+    "global": "ทั่วโลก"
+  },
+  "stages": {
+    "group_stage": "รอบแบ่งกลุ่ม",
+    "r32": "รอบ 32 ทีม",
+    "r16": "รอบ 16 ทีม",
+    "qf": "รอบก่อนรองชนะเลิศ",
+    "sf": "รอบรองชนะเลิศ",
+    "third_place": "อันดับที่ 3",
+    "final": "รอบชิงชนะเลิศ"
+  },
+  "points": {
+    "correctResult": "ผลถูกต้อง",
+    "correctScore": "สกอร์ถูกต้อง",
+    "championBonus": "โบนัสแชมป์",
+    "multiplier": "ตัวคูณ",
+    "perPoint": "คะแนน"
+  },
+  "common": {
+    "loading": "กำลังโหลด...",
+    "error": "เกิดข้อผิดพลาด",
+    "retry": "ลองใหม่อีกครั้ง",
+    "save": "บันทึก",
+    "cancel": "ยกเลิก",
+    "confirm": "ยืนยัน",
+    "close": "ปิด",
+    "back": "กลับ",
+    "next": "ถัดไป",
+    "yes": "ใช่",
+    "no": "ไม่",
+    "or": "หรือ",
+    "search": "ค้นหา",
+    "noData": "ไม่มีข้อมูล",
+    "comingSoon": "เร็วๆ นี้"
+  }
+}

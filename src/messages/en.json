@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "predictions": "Predictions",
+    "leaderboard": "Leaderboard",
+    "champion": "Champion Pick",
+    "profile": "Profile",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "MATCH MASTER",
+      "subtitle": "FIFA World Cup 2026",
+      "description": "Predict match results, earn points, and compete with friends in the world's greatest tournament.",
+      "ctaPlay": "Start Playing",
+      "ctaLearn": "How It Works"
+    },
+    "features": {
+      "predict": {
+        "title": "Predict Matches",
+        "description": "Predict every match — win/loss outcomes and exact scores."
+      },
+      "champion": {
+        "title": "Champion Pick",
+        "description": "Pick 1 team before June 11, 2026. Correct pick earns a +50 point bonus."
+      },
+      "compete": {
+        "title": "Compete",
+        "description": "Track your rank on the real-time global leaderboard."
+      }
+    }
+  },
+  "auth": {
+    "signInTitle": "Sign In",
+    "signUpTitle": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "orContinueWith": "Or continue with",
+    "googleSignIn": "Sign in with Google",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signUpLink": "Sign up",
+    "signInLink": "Sign in",
+    "errors": {
+      "invalidEmail": "Invalid email format",
+      "invalidCredentials": "Invalid email or password",
+      "emailTaken": "This email is already in use",
+      "weakPassword": "Password must be at least 8 characters",
+      "required": "This field is required"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myPoints": "My Points",
+    "myRank": "My Rank",
+    "totalPredictions": "Total Predictions",
+    "correctPredictions": "Correct Predictions",
+    "upcomingMatches": "Upcoming Matches",
+    "recentResults": "Recent Results",
+    "championPick": "Champion Pick",
+    "noChampionPick": "No champion selected",
+    "pickChampionBtn": "Pick a Champion",
+    "deadline": "Deadline: Jun 11, 2026",
+    "viewAll": "View All"
+  },
+  "predictions": {
+    "title": "Predictions",
+    "predict": "Predict",
+    "editPrediction": "Edit Prediction",
+    "savePrediction": "Save Prediction",
+    "cancel": "Cancel",
+    "home": "Home",
+    "away": "Away",
+    "vs": "VS",
+    "kickoff": "Kick-off",
+    "venue": "Venue",
+    "matchLocked": "This match is locked for predictions",
+    "predictionSaved": "Prediction saved successfully",
+    "noPredictions": "No predictions yet",
+    "filters": {
+      "all": "All",
+      "upcoming": "Upcoming",
+      "predicted": "Predicted",
+      "completed": "Completed"
+    }
+  },
+  "champion": {
+    "title": "World Cup Champion Pick",
+    "description": "Select 1 team you believe will win the FIFA World Cup 2026 before June 11, 2026. A correct pick earns you a +50 point bonus.",
+    "currentPick": "Your Current Pick",
+    "selectTeam": "Select a Team",
+    "confirmPick": "Confirm Pick",
+    "changePick": "Change Team",
+    "bonusPoints": "+50 Bonus Points",
+    "deadlinePassed": "The champion pick deadline has passed",
+    "pickConfirmed": "Champion pick confirmed successfully",
+    "warning": "Your champion pick will be locked after June 11, 2026"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "rank": "Rank",
+    "player": "Player",
+    "points": "Points",
+    "predictions": "Predictions",
+    "accuracy": "Accuracy",
+    "champion": "Champion",
+    "myPosition": "My Position",
+    "top10": "TOP 10",
+    "global": "Global"
+  },
+  "stages": {
+    "group_stage": "Group Stage",
+    "r32": "Round of 32",
+    "r16": "Round of 16",
+    "qf": "Quarter-Final",
+    "sf": "Semi-Final",
+    "third_place": "Third Place",
+    "final": "Final"
+  },
+  "points": {
+    "correctResult": "Correct Result",
+    "correctScore": "Correct Score",
+    "championBonus": "Champion Bonus",
+    "multiplier": "Multiplier",
+    "perPoint": "pts"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Try again",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "search": "Search",
+    "noData": "No data available",
+    "comingSoon": "Coming soon"
+  }
+}
