@@ -6,7 +6,7 @@ import { createServerClient } from '@supabase/ssr';
 const intlMiddleware = createIntlMiddleware(routing);
 
 // Routes that require authentication
-const PROTECTED = ['/dashboard', '/predictions', '/champion', '/profile'];
+const PROTECTED = ['/dashboard', '/predictions', '/champion', '/profile', '/admin'];
 
 export async function proxy(request: NextRequest) {
   // Run i18n middleware first to get the locale-prefixed path
