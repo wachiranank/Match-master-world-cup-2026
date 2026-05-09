@@ -69,7 +69,7 @@ git fetch --all
 git reset --hard origin/main
 
 log "Installing dependencies..."
-npm ci --omit=dev
+npm install --omit=dev
 
 log "Building Next.js..."
 npm run build
