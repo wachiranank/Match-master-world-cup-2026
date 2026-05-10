@@ -37,6 +37,23 @@ export async function createMatch(formData: FormData) {
   return { success: true };
 }
 
+export async function updateMatchTeams(matchId: string, homeTeamId: string, awayTeamId: string) {
+  const { supabase } = await assertAdmin();
+
+  const { error } = await (supabase as any)
+    .from('matches')
+    .update({ home_team_id: homeTeamId, away_team_id: awayTeamId })
+    .eq('id', matchId);
+
+  if (error) return { error: error.message };
+
+  revalidatePath('/th/admin/matches');
+  revalidatePath('/en/admin/matches');
+  revalidatePath('/th/predictions');
+  revalidatePath('/en/predictions');
+  return { success: true };
+}
+
 export async function updateMatchResult(
   matchId: string,
   homeScore: number,
