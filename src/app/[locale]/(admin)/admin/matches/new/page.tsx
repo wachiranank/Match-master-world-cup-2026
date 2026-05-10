@@ -18,7 +18,7 @@ export default async function NewMatchPage() {
 
   const teamsRes = await (supabase as any)
     .from('teams')
-    .select('id, name_en, name_th, flag')
+    .select('id, name_en, name_th, flag_url')
     .order('name_en');
   const teams = teamsRes.data as any[];
 
@@ -40,7 +40,7 @@ export default async function NewMatchPage() {
               className="w-full border rounded-md px-3 py-2 text-sm bg-background">
               <option value="">Select team...</option>
               {(teams ?? []).map((t: any) => (
-                <option key={t.id} value={t.id}>{t.flag} {t.name_en}</option>
+                <option key={t.id} value={t.id}>{t.name_en}</option>
               ))}
             </select>
           </div>
@@ -50,7 +50,7 @@ export default async function NewMatchPage() {
               className="w-full border rounded-md px-3 py-2 text-sm bg-background">
               <option value="">Select team...</option>
               {(teams ?? []).map((t: any) => (
-                <option key={t.id} value={t.id}>{t.flag} {t.name_en}</option>
+                <option key={t.id} value={t.id}>{t.name_en}</option>
               ))}
             </select>
           </div>

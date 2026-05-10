@@ -36,7 +36,7 @@ export default async function EditMatchPage({
       .single(),
     (supabase as any)
       .from('teams')
-      .select('id, name_en, flag')
+      .select('id, name_en, flag_url')
       .neq('id', TBD_ID)
       .order('name_en', { ascending: true }),
     (supabase as any)
@@ -103,7 +103,7 @@ export default async function EditMatchPage({
               <select name="home_team_id" defaultValue={match.home_team?.id ?? ''}
                 className="w-full border rounded-md px-3 py-2 text-sm bg-background">
                 {teams.map((t: any) => (
-                  <option key={t.id} value={t.id}>{t.flag} {t.name_en}</option>
+                  <option key={t.id} value={t.id}>{t.name_en}</option>
                 ))}
               </select>
             </div>
@@ -112,7 +112,7 @@ export default async function EditMatchPage({
               <select name="away_team_id" defaultValue={match.away_team?.id ?? ''}
                 className="w-full border rounded-md px-3 py-2 text-sm bg-background">
                 {teams.map((t: any) => (
-                  <option key={t.id} value={t.id}>{t.flag} {t.name_en}</option>
+                  <option key={t.id} value={t.id}>{t.name_en}</option>
                 ))}
               </select>
             </div>
