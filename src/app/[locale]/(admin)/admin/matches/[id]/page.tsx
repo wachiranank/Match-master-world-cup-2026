@@ -29,8 +29,8 @@ export default async function EditMatchPage({
       .from('matches')
       .select(`
         id, stage_key, kick_off, status, home_score, away_score, venue_en, venue_th,
-        home_team:teams!matches_home_team_id_fkey(id, name_en, flag),
-        away_team:teams!matches_away_team_id_fkey(id, name_en, flag)
+        home_team:teams!matches_home_team_id_fkey(id, name_en, flag_url),
+        away_team:teams!matches_away_team_id_fkey(id, name_en, flag_url)
       `)
       .eq('id', id)
       .single(),
