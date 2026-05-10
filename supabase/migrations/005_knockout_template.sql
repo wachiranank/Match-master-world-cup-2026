@@ -10,8 +10,8 @@
 -- ============================================================
 
 -- Step 1: เพิ่มทีม TBD สำหรับใช้เป็น placeholder
-INSERT INTO teams (id, name_en, name_th, flag, confederation)
-VALUES ('00000000-0000-0000-0000-000000000001', 'TBD', 'TBD', '🏴', 'TBD')
+INSERT INTO teams (id, name_en, name_th, flag_url, confederation)
+VALUES ('00000000-0000-0000-0000-000000000001', 'TBD', 'TBD', '', 'TBD')
 ON CONFLICT (id) DO NOTHING;
 
 -- ============================================================
