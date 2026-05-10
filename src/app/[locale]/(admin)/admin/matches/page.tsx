@@ -27,8 +27,8 @@ export default async function AdminMatchesPage() {
     .from('matches')
     .select(`
       id, stage_key, kick_off, status, home_score, away_score, venue_en,
-      home_team:teams!matches_home_team_id_fkey(name_en, flag),
-      away_team:teams!matches_away_team_id_fkey(name_en, flag)
+      home_team:teams!matches_home_team_id_fkey(name_en, flag_url),
+      away_team:teams!matches_away_team_id_fkey(name_en, flag_url)
     `)
     .order('kick_off', { ascending: true });
   const matches = matchesRes.data as any[];
@@ -75,7 +75,7 @@ export default async function AdminMatchesPage() {
                 {list.map((m: any) => (
                   <tr key={m.id} className="border-b last:border-0 hover:bg-muted/30 transition-colors">
                     <td className="px-4 py-3 font-medium">
-                      {m.home_team?.flag} {m.home_team?.name_en ?? '—'} vs {m.away_team?.name_en ?? '—'} {m.away_team?.flag}
+                      {m.home_team?.name_en ?? '—'} vs {m.away_team?.name_en ?? '—'}
                     </td>
                     <td className="px-4 py-3 text-center font-mono">
                       {m.status === 'scheduled' ? '– : –' : `${m.home_score ?? 0} : ${m.away_score ?? 0}`}
