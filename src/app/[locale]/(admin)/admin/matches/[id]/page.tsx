@@ -37,7 +37,6 @@ export default async function EditMatchPage({
     (supabase as any)
       .from('teams')
       .select('id, name_en, flag_url')
-      .neq('id', TBD_ID)
       .order('name_en', { ascending: true }),
     (supabase as any)
       .from('predictions')
