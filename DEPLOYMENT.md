@@ -13,7 +13,7 @@
 ### ความต้องการก่อนติดตั้ง
 
 - Hostinger VPS (Ubuntu 24.04) พร้อม IP สาธารณะ
-- โดเมนที่ชี้ A Record มาที่ IP ของ VPS (เช่น janefg.online → 72.60.233.7)
+- โดเมนที่ชี้ A Record มาที่ IP ของ VPS (เช่น yourdomain.com → YOUR_VPS_IP)
 - บัญชี Supabase พร้อม Project URL, Anon Key, Service Role Key
 - บัญชี GitHub พร้อม repo: `https://github.com/wachiranank/Match-master-world-cup-2026.git`
 - (ถ้าต้องการ Google Login) Google OAuth Client ID และ Client Secret
@@ -177,7 +177,7 @@ This app uses Next.js 16, Supabase, PM2, and Nginx running on a Hostinger VPS (U
 ### Prerequisites
 
 - Hostinger VPS (Ubuntu 24.04) with a public IP address
-- Domain with an A record pointing to the VPS IP (e.g. janefg.online → 72.60.233.7)
+- Domain with an A record pointing to the VPS IP (e.g. yourdomain.com → YOUR_VPS_IP)
 - Supabase project with URL, Anon Key, and Service Role Key
 - GitHub account with repo: `https://github.com/wachiranank/Match-master-world-cup-2026.git`
 - (For Google Login) Google OAuth Client ID and Client Secret

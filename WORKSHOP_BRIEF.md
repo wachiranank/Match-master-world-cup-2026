@@ -221,7 +221,7 @@ proxy_busy_buffers_size 256k;
 
 ### 7.10 Let's Encrypt rate limit (hstgr.cloud)
 **ปัญหา:** Hostinger subdomain ถูก rate limit เพราะลูกค้าหลายรายใช้ `hstgr.cloud`  
-**Claude Code วิเคราะห์:** แนะนำ 3 ทางออก, ผู้ใช้เลือกซื้อ domain ใหม่ `janefg.online`
+**Claude Code วิเคราะห์:** แนะนำ 3 ทางออก, ผู้ใช้เลือกซื้อ custom domain ใหม่
 
 ---
 
@@ -249,7 +249,7 @@ User: "go step 4"
 Claude Code สามารถ SSH เข้า Server และรัน command ได้โดยตรง:
 ```bash
 # Claude ทำให้อัตโนมัติ
-ssh root@72.60.233.7 → git pull → npm run build → pm2 reload
+ssh root@YOUR_VPS_IP → git pull → npm run build → pm2 reload
 ```
 
 ### Pattern 5: Iterative Problem Solving
@@ -363,7 +363,6 @@ supabase/migrations/
 ## 14. Live Demo
 
 **URL:** https://janefg.online  
-**Admin Panel:** https://janefg.online/th/admin (เฉพาะ admin email)  
 **GitHub:** https://github.com/wachiranank/Match-master-world-cup-2026  
 
 ---
