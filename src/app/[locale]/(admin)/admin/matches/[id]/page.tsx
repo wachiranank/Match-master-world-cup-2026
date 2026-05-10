@@ -13,7 +13,7 @@ const STAGE_LABELS: Record<string, string> = {
   final: 'Final',
 };
 
-const TBD_ID = '00000000-0000-0000-0000-000000000001';
+const TBD_ID = '00000000-0000-0000-0000-000000000099';
 
 export default async function EditMatchPage({
   params,

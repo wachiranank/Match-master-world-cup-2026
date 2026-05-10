@@ -1,6 +1,6 @@
 'use server';
 
-import { createClient } from '@/lib/supabase/server';
+import { createClient, createAdminClient } from '@/lib/supabase/server';
 import { revalidatePath } from 'next/cache';
 
 async function assertAdmin() {
@@ -11,11 +11,12 @@ async function assertAdmin() {
   const adminEmails = (process.env.ADMIN_EMAILS ?? '').split(',').map((e) => e.trim());
   if (!adminEmails.includes(user.email ?? '')) throw new Error('not_admin');
 
-  return { supabase, user };
+  return { user };
 }
 
 export async function createMatch(formData: FormData) {
-  const { supabase } = await assertAdmin();
+  await assertAdmin();
+  const db = createAdminClient();
 
   const payload = {
     home_team_id: formData.get('home_team_id') as string,
@@ -27,7 +28,7 @@ export async function createMatch(formData: FormData) {
     status: 'scheduled',
   };
 
-  const { error } = await (supabase as any).from('matches').insert(payload);
+  const { error } = await (db as any).from('matches').insert(payload);
   if (error) return { error: error.message };
 
   revalidatePath('/th/admin/matches');
@@ -38,9 +39,10 @@ export async function createMatch(formData: FormData) {
 }
 
 export async function updateMatchTeams(matchId: string, homeTeamId: string, awayTeamId: string) {
-  const { supabase } = await assertAdmin();
+  await assertAdmin();
+  const db = createAdminClient();
 
-  const { error } = await (supabase as any)
+  const { error } = await (db as any)
     .from('matches')
     .update({ home_team_id: homeTeamId, away_team_id: awayTeamId })
     .eq('id', matchId);
@@ -60,9 +62,10 @@ export async function updateMatchResult(
   awayScore: number,
   status: string
 ) {
-  const { supabase } = await assertAdmin();
+  await assertAdmin();
+  const db = createAdminClient();
 
-  const { error } = await (supabase as any)
+  const { error } = await (db as any)
     .from('matches')
     .update({ home_score: homeScore, away_score: awayScore, status })
     .eq('id', matchId);
@@ -79,7 +82,7 @@ export async function updateMatchResult(
 }
 
 export async function triggerScoring() {
-  const { supabase } = await assertAdmin();
+  await assertAdmin();
 
   const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000';
   const secret = process.env.SCORING_SECRET ?? '';
